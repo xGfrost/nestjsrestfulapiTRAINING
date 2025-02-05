@@ -5,7 +5,7 @@ import { PrismaService } from 'src/common/prisma.service';
 import { ContactResponse, CreateContactRequest } from "src/model/contact.model";
 import { ValidationService } from "src/common/validation.service";
 import { ContactValidation } from "./contact.validation";
-import { User } from "@prisma/client";
+import { Contact, User } from "@prisma/client";
 
 @Injectable()
 export class ContactService {
