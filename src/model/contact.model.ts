@@ -12,3 +12,11 @@ export class CreateContactRequest {
     emali?: string;
     phone?: string;
 }
+
+export class UpdateContactRequest {
+    id: number;
+    first_name: string;
+    last_name?: string;
+    emali?: string;
+    phone?: string;
+}
