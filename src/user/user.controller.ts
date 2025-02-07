@@ -55,11 +55,12 @@ export class UserController{
 
     @Delete('/current')
     @HttpCode(200)
-    async logout(@Auth() user: User, @Body() request: UpdateUserRequest): 
-    Promise<WebResponse<UserResponse>>{
+    async logout(@Auth() user: User): 
+    Promise<WebResponse<Boolean>>{
         const result = await this.userService.logout(user);
         return {
-            data: result
+            data: true,
         };
     }
+
 }
